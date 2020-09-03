@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Real School</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <style>
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Granstander Clean', cursive;
+}
+:root{
+	--black-color: #000000;
+	--red-color: #f90505;
+	--red-color: #f90505;
+	--gray-color: #7d7e7d;
+	--yellow-color: #f6df27;
+	--white-color: #fff;
+	--green-color: #a2eb3e;
+	--blue-color: #3e99eb;
+	--violet-color: #bb5ef5;
+}
+
+/*-------- navbar section  ----------*/
+
+.navbar{
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+}
+.bars{
+	display: block;
+}
+.fa-bars{
+	font-size: 22px!important;
+	color: var(--black-color);
+}
+a.navbar-brand{
+	color: #FF3A58;
+	font-weight: bold;
+	font-size: 22px!important;
+	text-decoration: none;
+}
+a.navbar-brand:hover{
+	color: #FF3A58;
+}
+ul.navbar-nav{
+	margin-right: 50px!important;
+}
+ul li{
+	margin: 0 10px;
+}
+ul li a{
+	color: var(--black-color);
+	font-weight: bold;
+}
+.fa-user{
+	font-size: 25px!important;
+	background-color: #BFFE8A;
+	padding: 5px 10px;
+	border-radius: 50%;
+	
+}
+.price-bar{
+	margin-right: auto;
+	border: 1px solid var(--black-color);
+	border-radius: 20px;
+	padding: 1px 20px 1px 1px;
+}
+.price{
+	font-weight: bold;
+}
+
+
+#banner{
+	background-color: #fafbf4;
+	height: auto;
+}
+.path a{
+	color: var(--gray-color);
+	font-size: 14px;
+}
+#banner h1{
+	font-size: 30px;
+}
+.museum h5{
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+.museum h5 span{
+	font-size: 15px;
+}
+.museum-img{
+	position: relative;
+}
+.museum-img img{
+	border-radius: 5px;
+}
+.museum h6{
+	position: absolute;
+	font-size: 20px;
+	color: var(--white-color);
+	top: 2%;
+	right: 8%;
+}
+.museum button{
+	border: none;
+	background-color: var(--white-color);
+	position: absolute;
+	left: 4%;
+	bottom: 4%;
+	padding: 7px 20px;
+	border-radius: 5px;
+}
+.museum button .fa{
+	font-size: 20px;
+}
+.booking-info span{
+	font-size: 14px;
+	color: #A9B7B9;
+}
+.recommend{
+	border: 1px solid var(--black-color);
+	border-radius: 5px;
+	padding: 3px 10px;
+	background-color: #FDFFD3;
+}
+.recommend h6{
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+.recommend span{
+	font-size: 10px;
+}
+.date h3{
+	font-size: 20px;
+}
+.date h3 span{
+	font-size: 18px;
+	color: var(--black-color);
+}
+.fa-desktop {
+	font-size: 18px!important;
+}
+.fa-mobile{
+	font-size: 28px!important;
+}
+.slot a{
+	border: 1px solid var(--black-color);
+	display: block;
+	padding: 5px 10px;
+	border-radius: 20px;
+	color: var(--black-color);
+	text-align: center;
+	text-decoration: none!important;
+}
+.slot a:hover{
+	color: var(--black-color);
+}
+.slot span{
+	font-size: 12px;
+}
+.fee button{
+	padding: 5px 10px;
+	border: none;
+	box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.3); 
+	background-color: var(--white-color);
+}
+.fee span{
+	font-size: 12px;
+}
+.fee a{
+	color: #FF3A58;
+	text-decoration: underline;
+	font-size: 14px;
+	font-weight: bold;
+}
+.fee a:hover{
+	color: #FF3A58;
+}
+.book button{
+	background-color: #FF3A58;
+	color: var(--white-color);
+	font-weight: bold;
+	padding: 5px 100px;
+	border: none;
+	border-radius: 5px;
+}
+.share button{
+	background-color: var(--white-color);
+	color: #FF3A58;
+	font-weight: bold;
+	padding: 5px 10px;
+	border: 1px solid var(--red-color);
+	border-radius: 5px;
+}
+
+@media screen and (max-width: 992px){
+	.bars{
+		display: none!important;
+	}
+	.recommend{
+		display: none;
+	}
+	.book button{
+		padding: 5px 70px; 
+	}
+	.slot a{
+		padding: 3px 7px; 
+		font-size: 14px;
+	}
+}
+
+
+/*--------------- main content section -----------------*/
+
+.underline{
+	border: 3px solid var(--green-color);
+	width: 30px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+#main-content{
+	height: auto;
+}
+#main-content h2{
+	font-size: 25px;
+	margin-bottom: 30px;
+}
+.text-content .goals h5{
+	display: inline-block;
+	color: var(--white-color);
+	font-size: 15px;
+	background-color: var(--blue-color);
+	padding: 2px 20px;
+	border-radius: 30%;
+	margin-bottom: 15px;
+}
+.text-content .badges h5{
+	display: inline-block;
+	color: var(--white-color);
+	font-size: 15px;
+	background-color: var(--green-color);
+	padding: 2px 20px;
+	border-radius: 30%;
+	margin-bottom: 15px;
+}
+.text-content button{
+	border-radius: 22px;
+	border: 1px solid var(--gray-color);
+	padding: 11px 30px 11px 5px;
+	background-color: var(--white-color);
+	font-weight: bold;
+	margin-right: 20px;
+	margin-bottom: 30px;
+}
+.text-content .goals button small{
+	border: 1px solid var(--gray-color);
+	padding: 10px 3px;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+.text-content .badges button small{
+	padding: 10px 5px;
+	border-radius: 50%;
+	margin-right: 5px;
+	background-color: var(--yellow-color);
+}
+.text-content .badges button.daredevil, .text-content .badges button.troubleshooter{
+	border-radius: 22px 5px 5px 22px;
+}
+.text-content .skills button{
+	padding: 11px 20px 11px 5px;
+}
+.text-content .skills h5{
+	display: inline-block;
+	color: var(--white-color);
+	font-size: 15px;
+	background-color: var(--violet-color);
+	padding: 2px 20px;
+	border-radius: 30%;
+	margin-bottom: 15px;
+}
+.text-content .skills button small{
+	padding: 10px 5px;
+	border-radius: 50%;
+	margin-right: 5px;
+	background-color: var(--yellow-color);
+}
+.text-content p{
+	font-size: 14px;
+	color: var(--gray-color);
+}
+.card{
+	box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.3);
+	border-radius: 10px;
+}
+.card .card-body{
+	padding: 0;
+}
+.card-text{
+	padding: 20px 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.attend-class .card{
+	background-color: #F6FEFF;
+}
+.attend-class h6{
+	color: var(--red-color);
+	font-size: 14px;
+}
+.attend-class h5{
+	font-size: 14px;
+}
+
+/* --------footer section --------*/
+#footer{
+	background-color: #635D5D;
+}
+.footer-btn button{
+	background-color: #FF3A58;
+	color: var(--white-color);
+	font-weight: bold;
+	padding: 5px 20px;
+	border: none;
+	border-radius: 5px;
+}
+#footer h3{
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+#footer p{
+	font-size: 12px;
+	color: lightgray;
+}
+#footer h6{
+	font-size: 15px;
+}
+#footer a{
+	color: lightgray;
+	margin-bottom: 10px;
+	font-size: 12px;
+	text-decoration: none;
+}
+#footer .social-media a{
+	font-size: 16px;
+}
+#footer .social-media i{
+	background-color: var(--white-color);
+	padding: 10px;
+	border-radius: 50%;
+}
+#footer i.fa-facebook{
+	padding: 10px 15px;
+	color: dimgray;
+	margin-right: 30px;
+}
+#footer i.fa-instagram{
+	padding: 11px 13px;
+	color: dimgray;
+	margin-right: 30px;
+}
+#footer i.fa-youtube-play{
+	padding: 11px 13px;
+	color: dimgray;
+}
+.last{
+	background-color: dimgray;
+	padding: 5px;
+	font-size: 12px;
+	color: lightgray;
+}
+</style>
+</head>
+    <body>
+        <!-- navbar section -->
+        <nav class="navbar navbar-expand-md navbar-fixed">
+            <div class="container">
+                <!-- <a href="#" class="bars"><i class="fa fa-bars"></i></a> -->
+                <a href="#" class="navbar-brand mr-auto">REAL SCHOOL</a>
+                
+                <div class="collapse navbar-collapse" id="navbarid">
+                    <ul class="navbar-nav text-center ml-auto mr-5">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Masterclasses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Programs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Challenges</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Library</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="price-bar">
+                   <span> <i class="fa fa-user"></i></span>
+                    <span class="price">INR 200</span>
+                </div>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarid">
+                <span><i class="fa fa-bars"></i></span>
+                </button>
+            </div>
+        </nav>
+        <!-- end of navbar section -->
+        <!-- banner section -->
+        <section id="banner" class="py-4">
+            <div class="content container-md">
+                <!-- path link section -->
+                <div class="path">
+                    <a href="#">Home</a> <i class="fa fa-angle-double-right"></i>&nbsp; <a href="#">Goals</a> <i class="fa fa-angle-double-right"></i>&nbsp; <a href="#">Explorer</a> <i class="fa fa-angle-right"></i>
+                </div>
+                <!-- end of path link section -->
+                <div class="row mb-3">
+                    <div class="col-12 col-md-6 py-4 museum">
+                        <h1>Trip to the Palace of Versailles</h1>
+                        <h5>ONLINE MUSEUM <span class="ml-3">8+ Years</span></h5>
+                        <div class="museum-img">
+                            <img src="image1/schoolimage.png" alt="school image" class="img-fluid">
+                            
+                            <h6>REAL SCHOOL</h6>
+                            <button type="button"><i class="fa fa-caret-right"></i> Watch Trailer</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 py-4 booking-info">
+                        <div class="row">
+                            <div class="col-4 offset-8">
+                                <button type="button" class="recommend">
+                                <div class="row">
+                                    <div class="col-3 mt-2">
+                                        <img src="image1/like.png ">
+                                    </div>
+
+                                    <div class="col-9 text-left">
+                                        <h6>125</h6>
+                                        <span>RECOMMEND</span>
+                                    </div>
+                                </div>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="row pt-5 mb-3 date">
+                            <div class="col-9 pt-2">
+                                <span>Live on</span>
+                                <h3 class="pt-1"><b>29 JUNE 2020</b> <span>for 60 min</span></h3>
+                            </div>
+                            <div class="col-3 pt-2">
+                                <span>Devices</span><br>
+                                <div class="d-flex align-items-center pt-1">
+                                    <i class="fa fa-desktop"></i> <span class="mx-2">or</span> <img src="image1/mobile.png"></img>
+                                </div>
+                            </div>
+                        </div>
+                        <span>Choose Slot</span>
+                        <div class="row mb-3 pt-2 slot">
+                            <div class="col-3 text-center">
+                                <a href="#">10.30 AM</a>
+                                <span>2 / 5 Seats left</span>
+                            </div>
+                            <div class="col-3">
+                                <a href="#">5 PM</a>
+                            </div>
+                            <div class="col-3 text-center">
+                                <a href="#">6.30 PM</a>
+                                <span>1 / 5 Seats left</span>
+                            </div>
+                        </div>
+                        <span>Class Fee</span>
+                        <div class="row mb-3 pt-2 fee">
+                            <div class="col-4">
+                                <button type="button">
+                                <span><del>INR 120</del></span>&nbsp;&nbsp;
+                                <strong>INR 60</strong>
+                                </button>
+                            </div>
+                            <div class="col-4">
+                                <a href="#">Earn 100+ Points</a>
+                            </div>
+                        </div>
+                        
+                        <div class="row pt-3">
+                            <div class="col-9 book">
+                                <button>Book this Class for Free</button>
+                            </div>
+                            <div class="col-3 share">
+                                <button>Share</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- end of banner section -->
+        <!-- main content -->
+        <section id="main-content" class="py-4">
+            <div class="container text-content">
+                <div class="underline"></div>
+                <h2>What Goals, Badges & Skills will be achieved in this Class?</h2>
+                <div class="row mb-5">
+                    <div class="col-12 col-md-3 goals">
+                        <h5>Goals</h5><br>
+                        <button><small>+15%</small> Explorer</button>
+                    </div>
+                    <div class="col-12 col-md-9 badges">
+                        <h5>Badges</h5><br>
+                        <button><small>+20P</small> Powerhouse of Ideas</button>
+                        <button class="daredevil"><small>+10P</small> Daredevil</button>
+                        <button  class="troubleshooter"><small>+10P</small> The Troubleshooter</button>
+                    </div>
+                    <div class="col-12 skills">
+                        <h5>Skills</h5><br>
+                        <button><small>+10P</small> Creative Thinking</button>
+                        <button><small>+10P</small> Flexible Thinking</button>
+                        <button><small>+10P</small> Management</button>
+                        <button><small>+10P</small> Strategic Thinking</button>
+                        <button><small>+10P</small> Learning</button>
+                    </div>
+                </div>
+                <div class="underline"></div>
+                <h2>What will be covered in this Class?</h2>
+                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint saepe voluptates, ducimus dolores voluptatibus excepturi, iusto quos quis maiores enim eius facilis distinctio, velit corporis fuga pariatur odit officia accusantium.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint saepe voluptates, ducimus dolores voluptatibus excepturi, iusto quos quis maiores enim eius facilis distinctio, velit corporis fuga pariatur odit officia accusantium.</p>
+                <div class="underline"></div>
+                <h2>What are the Post-Class Assignments?</h2>
+                <div class="row mb-5">
+                    <div class="col-md-4 col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="image1/eiffeltower1.jpg" alt="" class="card-img img-fluid" width="10%">
+                                
+                                <div class="card-text">
+                                    <h5>#3 Words in French</h5>
+                                    <span><i class="fa fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="image1/eiffeltower1.jpg" alt="" class="card-img img-fluid" width="10%">
+                                
+                                <div class="card-text">
+                                    <h5>#3 Words in French</h5>
+                                    <span><i class="fa fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="underline"></div>
+                <h2>How to get ready for this Class?</h2>
+                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint saepe voluptates, ducimus dolores voluptatibus excepturi, iusto quos quis maiores enim eius facilis distinctio, velit corporis fuga pariatur odit officia accusantium.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint saepe voluptates, ducimus dolores voluptatibus excepturi, iusto quos quis maiores enim eius facilis distinctio, velit corporis fuga pariatur odit officia accusantium.</p>
+                <div class="underline"></div>
+                <h2>How to attend this Class?</h2>
+                <div class="row mb-5 attend-class justify-content-center">
+                    <div class="col-6 col-md-3 mb-3">
+                        <div class="card text-center">
+                            <div class="card-body p-3">
+                                <i class="fa fa-caret-square-o-right fa-3x"></i>
+                                <h6 class="my-2">STEP 1</h6>
+                                <h5 class="mt-3">BOOK YOUR CLASS</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint saepe voluptates.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-3">
+                        <div class="card text-center">
+                            <div class="card-body p-3">
+                                <img src="image1/step2.png"></img>
+                             
+                                <h6 class="my-2">STEP 2</h6>
+                                <h5 class="mt-3">GET PREPARED</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint saepe voluptates.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-3">
+                        <div class="card text-center">
+                            <div class="card-body p-3">
+                                <img src="image1/step3.png"></img>
+                                <h6 class="my-2">STEP 3</h6>
+                                <h5 class="mt-3">SET UP FOR CLASS</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint saepe voluptates.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-3">
+                        <div class="card text-center">
+                            <div class="card-body p-3">
+                                <i class="fa fa-caret-square-o-right fa-3x"></i>
+                                <h6 class="my-2">STEP 4</h6>
+                                <h5 class="mt-3">JOIN CLASS</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint saepe voluptates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                
+            </div>
+        </section>
+        
+        <!-- end of main content -->
+        <!-- footer section -->
+        <section id="footer" class="pt-5">
+            <div class="container">
+                <div class="text-center footer-btn mb-5">
+                    <button>Go to RealTV</button>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-12 col-md-4 text-light mb-4">
+                        <h3>REAL SCHOOL</h3>
+                        <p>A Product of uFaber Education</p>
+                        <div class="row no-gutters">
+                            <div class="col-1">
+                                <i class="fa fa-map-pin"></i>
+                            </div>
+                            <div class="col-10">
+                                <p>FF A-006, Art Guild House, Phoenix Market City, Kurla, Mumbai- 400070</p>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-1">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="col-10">
+                                <p>+91 8080 555 766</p>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-1">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="col-10">
+                                <p>info@ufaber.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2 text-light mb-4">
+                        <h6>QUICK Links</h6>
+                        <a href="">Teach with us</a> <br>
+                        <a href="">Refer a Friend</a> <br>
+                        <a href="">Become an Affiliate</a>
+                    </div>
+                    <div class="col-6 col-md-2 text-light mb-4">
+                        <a href="">About Us</a> <br>
+                        <a href="">FAQs</a> <br>
+                        <a href="">Blog</a> <br>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                    <div class="col-12 col-md-4 social-media mb-3">
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-youtube-play"></i></a>
+                        <br>
+                        <a href=""><img src="image1/playstore.jpg" alt="" class="img-fluid mr-3" width="35%"></a>
+                        <a href=""><img src="image1/appstore.jpg" alt="" class="img-fluid" width="35%"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center last">
+                &copy; 2019 uFaber, ALL rights reserved uFaber Edutech
+            </div>
+        </section>
+        <!-- end of footer section -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
